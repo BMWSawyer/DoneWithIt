@@ -20,6 +20,7 @@ export default function WelcomeScreen(props) {
     >
       <View style={styles.logoContainer}>
         <Image style={styles.logo} source={require("../assets/logo-red.png")} />
+        <Text style={styles.tagline}>DineAround</Text>
         <Text style={styles.tagline}>Dining Made Better</Text>
       </View>
       <View style={styles.buttonsContainer}>
