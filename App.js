@@ -9,12 +9,14 @@ import {
   SafeAreaView,
 } from "react-native";
 import { Button } from "react-native-web";
+import ViewImageScreen from "./app/screens/ViewImageScreen";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 
 export default function App() {
   return (
     // <SafeAreaView style={styles.container}>
-    <WelcomeScreen />
+    //ß<WelcomeScreen />
+    <ViewImageScreen />
     // </SafeAreaView>
   );
 }
