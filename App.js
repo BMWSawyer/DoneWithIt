@@ -34,7 +34,8 @@ export default function App() {
     //     image={require("./app/assets/main-course.jpg")}
     //   />
     // </View>
-    <ListingDetailsScreen />
+    //<ListingDetailsScreen />
+    <ViewImageScreen />
   );
 }
 
