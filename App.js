@@ -1,19 +1,21 @@
+import React from "react";
 //import { StatusBar } from "expo-status-bar";
 import {
+  View,
+  Button,
   StyleSheet,
   Text,
   Image,
   Alert,
   Platform,
-  StatusBar,
   SafeAreaView,
 } from "react-native";
-import { Button } from "react-native-web";
 
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import AppText from "./app/components/AppText";
 import AppButton from "./app/components/AppButton";
+import Card from "./app/components/Card";
 
 export default function App() {
   return (
@@ -23,7 +25,14 @@ export default function App() {
     //     <AppText>Hello</AppText>
     //   </View>
     // </SafeAreaView>
-    <WelcomeScreen />
+    // <WelcomeScreen />
+    <View style={{ backgroundColor: "#f8f4f4", padding: 20, paddingTop: 100 }}>
+      <Card
+        title="Salmon"
+        subTitle="$100"
+        image={require("./app/assets/main-course.jpg")}
+      />
+    </View>
   );
 }
 
