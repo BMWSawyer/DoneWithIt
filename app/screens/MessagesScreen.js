@@ -13,7 +13,7 @@ const messages = [
     id: 2,
     title: "T2",
     description: "D2",
-    image: require("../assets/dessert.jpg"),
+    image: require("../assets/profilepic-2.jpg"),
   },
 ];
 
