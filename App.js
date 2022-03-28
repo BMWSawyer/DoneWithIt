@@ -21,7 +21,7 @@ import MessagesScreen from "./app/screens/MessagesScreen";
 
 export default function App() {
   return (
-    // <SafeAreaView style={styles.container}>
+    //<SafeAreaView style={styles.container}>
     //   <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
     //     <AppButton title="Login" onPress={() => console.log("Tapped")} />
     //     <AppText>Hello</AppText>
