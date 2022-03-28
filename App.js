@@ -2,8 +2,8 @@ import React from "react";
 import "react-native-gesture-handler";
 //import { StatusBar } from "expo-status-bar";
 import { View } from "react-native";
-import AccountScreen from "./app/screens/AccountScreen";
+import ListingsScreen from "./app/screens/ListingsScreen";
 
 export default function App() {
-  return <AccountScreen />;
+  return <ListingsScreen />;
 }
