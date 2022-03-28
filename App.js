@@ -1,9 +1,15 @@
-import React from "react";
-import "react-native-gesture-handler";
+import React, { useState } from "react";
+import { Text, TextInput } from "react-native-web";
+import AppTextInput from "./app/components/AppTextInput";
 //import { StatusBar } from "expo-status-bar";
-import { View } from "react-native";
-import ListingsScreen from "./app/screens/ListingsScreen";
+import Screen from "./app/components/Screen";
 
 export default function App() {
-  return <ListingsScreen />;
+  const [firstName, setFirstName] = useState("");
+
+  return (
+    <Screen>
+      <AppTextInput placeholder="Username" icon="email" />
+    </Screen>
+  );
 }
