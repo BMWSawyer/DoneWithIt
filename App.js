@@ -1,15 +1,20 @@
-import React, { useState } from "react";
-import { Text, TextInput } from "react-native-web";
+import React from "react";
+import AppPicker from "./app/components/AppPicker";
 import AppTextInput from "./app/components/AppTextInput";
 //import { StatusBar } from "expo-status-bar";
 import Screen from "./app/components/Screen";
 
 export default function App() {
-  const [firstName, setFirstName] = useState("");
+  const categories = [
+    { label: "Dinner", value: 1 },
+    { label: "Lunch", value: 2 },
+    { label: "Breakfast", value: 3 },
+  ];
 
   return (
     <Screen>
-      <AppTextInput placeholder="Username" icon="email" />
+      <AppPicker items={categories} icon="apps" placeholder="Category" />
+      <AppTextInput icon="email" placeholder="email" />
     </Screen>
   );
 }
