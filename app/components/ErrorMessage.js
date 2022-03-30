@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet } from "react-native-web";
+
 import AppText from "./AppText";
 
 export default function ErrorMessage({ error, visible }) {

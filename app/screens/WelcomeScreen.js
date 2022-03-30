@@ -5,11 +5,9 @@ import {
   StyleSheet,
   View,
   Text,
-  Button,
 } from "react-native-web";
-import ViewImageScreen from "./ViewImageScreen";
+
 import AppButton from "../components/AppButton";
-import colors from "../config/colors";
 
 export default function WelcomeScreen(props) {
   return (

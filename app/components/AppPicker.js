@@ -8,6 +8,7 @@ import {
   FlatList,
 } from "react-native-web";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+
 import defaultStyles from "../config/styles";
 import AppText from "./AppText";
 import Screen from "./Screen";
