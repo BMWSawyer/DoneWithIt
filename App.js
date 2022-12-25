@@ -15,6 +15,7 @@ import WelcomeScreen from "./app/screens/WelcomeScreen";
 
 import navigationTheme from "./app/navigation/navigationTheme";
 import AppNavigator from "./app/navigation/AppNavigator";
+import routes from "./app/navigation/routes";
 
 const Link = () => {
   const navigation = useNavigation();
@@ -22,7 +23,7 @@ const Link = () => {
   return (
     <Button
       title="Click"
-      onPress={() => navigation.navigate("TweetDetails", { id: 1 })}
+      onPress={() => navigation.navigate(routes.TWEET_DETAILS, { id: 1 })}
     />
   );
 };

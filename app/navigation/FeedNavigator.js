@@ -13,3 +13,6 @@ const FeedNavigator = () => (
 );
 
 export default FeedNavigator;
+
+// This will sit on the StackNavigator level
+// screenOptions={{ headerShown: false }}
