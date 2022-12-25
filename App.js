@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Text } from "react-native-web";
+import { Button, Text } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import {
   bottomTabNavigator,
@@ -9,7 +9,12 @@ import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import Screen from "./app/components/Screen";
+import AuthNavigator from "./app/navigation/AuthNavigator";
+import WelcomeScreen from "./app/screens/WelcomeScreen";
 //import { StatusBar } from "expo-status-bar";
+
+import navigationTheme from "./app/navigation/navigationTheme";
+import AppNavigator from "./app/navigation/AppNavigator";
 
 const Link = () => {
   const navigation = useNavigation();
@@ -81,7 +86,7 @@ const TabNavigator = () => (
   >
     <Tab.Screen
       name="Feed"
-      component={Tweets}
+      component={StackNavigator}
       options={{
         tabBarIcon: ({ size, color }) => (
           <MaterialCommunityIcons name="home" size={size} color={color} />
@@ -94,8 +99,9 @@ const TabNavigator = () => (
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <TabNavigator />
+    <NavigationContainer theme={navigationTheme}>
+      {/* <AuthNavigator /> */}
+      <AppNavigator />
     </NavigationContainer>
   );
 }
